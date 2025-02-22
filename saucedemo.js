@@ -43,7 +43,7 @@ async function saucedemoAddToCartTest() {
 
 
   } finally {
-    // await driver.quit();
+    await driver.quit();
   }
 }
 
