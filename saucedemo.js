@@ -29,18 +29,21 @@ async function saucedemoAddToCartTest() {
     );
 
     // Tambah item ke cart
-    await driver.findElement(By.css(".shopping_cart_link")).click();
+    await driver.findElement(By.css(".btn.btn_primary.btn_small.btn_inventory")).click();
 
     // Validasi item berhasil ditambahkan
-    let cartItem = await driver.findElement(By.className("cart_list")).getText();
+    await driver.findElement(By.css(".shopping_cart_link")).click();
+    let cartItem = await driver.findElement(By.className("shopping_cart_badge")).getText();
     assert.strictEqual(
-      cartItem.length > 0,
+      cartItem == 1,
       true,
       "Item gagal ditambahkan ke cart"
     );
 
+
+
   } finally {
-    await driver.quit();
+    // await driver.quit();
   }
 }
 
