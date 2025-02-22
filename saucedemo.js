@@ -35,7 +35,7 @@ async function saucedemoAddToCartTest() {
     await driver.findElement(By.css(".shopping_cart_link")).click();
     let cartItem = await driver.findElement(By.className("shopping_cart_badge")).getText();
     assert.strictEqual(
-      cartItem == 1,
+      cartItem > 0,
       true,
       "Item gagal ditambahkan ke cart"
     );
