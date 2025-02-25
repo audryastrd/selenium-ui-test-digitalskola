@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "selenium-webdriver": "^4.29.0"
+  },
+  "scripts":{"test":"mocha saucedemo-cross-headless.js"},
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}
