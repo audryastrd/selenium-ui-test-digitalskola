@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "canvas": "^3.1.0",
+    "resemblejs": "^5.0.0",
+    "selenium-webdriver": "^4.29.0"
+  },
+  "scripts": {
+    "test": "mocha login.js",
+    "test:all": "mocha --parallel saucedemo/*.js"
+    
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}

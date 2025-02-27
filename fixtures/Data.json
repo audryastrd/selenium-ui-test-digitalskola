@@ -1,0 +1,24 @@
+{
+    "baseUrl": "https://www.saucedemo.com",
+    "validUser": {
+      "username": "standard_user",
+      "password": "secret_sauce"
+    },
+    "invalidUser": {
+      "username": "standard_user",
+      "password": "password"
+    },
+    "messages": {
+      "expectedLoginError": "Username and password do not match",
+      "loginError": "Error Message do not match"
+    },
+    "assertTitle": "Swag Lab",
+    "titleError": "Title does not include 'Swag Labs'",
+    "log": {
+      "LoginSuccess": "Testing Login Success!",
+      "LoginFailed": "Testing Login Failed = Success!",
+      "ItemAdded": "Barang berhasil ditambahkan !",
+      "ItemNotAdded": "Barang berhasil ditambahkan !"
+    }
+  }
+  
